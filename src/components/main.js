@@ -1,6 +1,4 @@
 import React from "react";
-import "./CollagePage.css";
-
 const navItems = ["Home", "About", "Portfolio", "Journal", "Contact"];
 
 const images = [
