@@ -1,21 +1,28 @@
 import React from "react";
+import CigGirl from "../assets/girl-w-cig.png";
+import LipsDrawing from "../assets/lips-drawing.png";
+import VelvetHand from "../assets/velvet-hand.png";
+import Logo from "../assets/sgb-pink.svg";
+import Cheetah from "../assets/cheetah.png";
+
+
 const navItems = ["Home", "About", "Portfolio", "Journal", "Contact"];
 
 const images = [
   {
-    src: "https://source.unsplash.com/random/400x500?cooking",
+    src: CigGirl,
     alt: "Cooking scene",
   },
   {
-    src: "https://source.unsplash.com/random/600x400?surfing",
+    src: LipsDrawing,
     alt: "Surfers at beach",
   },
   {
-    src: "https://source.unsplash.com/random/600x500?bar",
+    src: VelvetHand,
     alt: "Bar scene",
   },
   {
-    src: "https://source.unsplash.com/random/500x400?train-view",
+    src: Cheetah,
     alt: "Train window view",
   },
 ];
@@ -23,16 +30,6 @@ const images = [
 export default function CollagePage() {
   return (
     <div className="collage-wrapper">
-      <nav className="collage-nav">
-        <h1 className="collage-title">DARIA STOLYAROVA</h1>
-        <ul className="collage-nav-items">
-          {navItems.map((item) => (
-            <li key={item} className="collage-nav-link">
-              {item}
-            </li>
-          ))}
-        </ul>
-      </nav>
 
       <main className="collage-main">
         <section className="collage-intro">

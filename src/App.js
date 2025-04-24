@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import "./index.css";
 import CollagePage from "./components/main";
 import AboutPage from "./components/about.js";
 import ContactPage from "./components/contact.js";
 import ShopPage from "./components/shop.js";
+import Logo from "./assets/sgb-pink.svg";
 
 const navItems = [
   { label: "Home", key: "home" },
@@ -14,6 +15,11 @@ const navItems = [
 
 export default function App() {
   const [activePage, setActivePage] = useState("home");
+
+  const handleNavClick = useCallback((key) => {
+    console.log("Navigating to:", key); // for debugging
+    setActivePage(key);
+  }, []);
 
   const renderPageContent = () => {
     switch (activePage) {
@@ -33,15 +39,19 @@ export default function App() {
   return (
     <div className="collage-wrapper">
       <nav className="collage-nav">
-        <h1 className="collage-title">DARIA STOLYAROVA</h1>
+        <h1 className="collage-title">study for a girl book</h1>
+                <img src={Logo} alt="Logo" className="logo" />
+        
         <ul className="collage-nav-items">
           {navItems.map((item) => (
-            <li
-              key={item.key}
-              className={`collage-nav-link ${activePage === item.key ? "active" : ""}`}
-              onClick={() => setActivePage(item.key)}
-            >
-              {item.label}
+            <li key={item.key}>
+              <button
+                type="button"
+                className={`collage-nav-link ${activePage === item.key ? "active" : ""}`}
+                onClick={() => handleNavClick(item.key)}
+              >
+                {item.label}
+              </button>
             </li>
           ))}
         </ul>
