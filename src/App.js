@@ -4,7 +4,7 @@ import CollagePage from "./components/main";
 import AboutPage from "./components/about.js";
 import ContactPage from "./components/contact.js";
 import ShopPage from "./components/shop.js";
-import Logo from "./assets/sgb-pink.svg";
+import Logo from "./assets/gb-logo.png";
 
 const navItems = [
   { label: "Home", key: "home" },
@@ -39,8 +39,9 @@ export default function App() {
   return (
     <div className="collage-wrapper">
       <nav className="collage-nav">
-        <h1 className="collage-title">study for a girl book</h1>
-                <img src={Logo} alt="Logo" className="logo" />
+      <a href="https://studyforagirlbook.substack.com/" className="type-link">read our substack</a>
+
+ <img src={Logo} alt="Logo" className="logo" />
         
         <ul className="collage-nav-items">
           {navItems.map((item) => (

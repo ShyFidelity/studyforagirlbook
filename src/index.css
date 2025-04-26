@@ -1,5 +1,4 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 /* Global reset and box sizing */
 * {
   box-sizing: border-box;
@@ -15,6 +14,23 @@ html, body {
 button {
   all: unset;
   cursor: pointer;
+}
+
+
+.beth-ellen-regular {
+  font-family: "Beth Ellen", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.type-link{
+  font-family: "Chivo Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-variant: normal;
+  font-style: normal;
+  color: #333;
+  font-size: 1.3rem;
 }
 
 .collage-nav {
@@ -61,6 +77,11 @@ button {
   color: #333;
   border-radius: 4px;
   transition: background 0.2s, color 0.2s;
+  font-family: "Chivo Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-variant: normal;
+  font-size: 1.3rem;
 }
 
 .collage-nav-link:hover,
@@ -85,13 +106,24 @@ button {
   font-style: italic;
   color: #333;
 }
-
-/* Image grid */
 .collage-grid {
-  display: grid;
-  gap: 2rem;
-  margin: 3rem 0;
-  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  width: 100%;
+  height: 900px; /* tighter vertical space */
+  max-width: 1200px; /* a little wider on big screens */
+  margin: 0 auto;
+}
+
+.collage-image {
+  max-width: 450px; /* slightly smaller so more fit */
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+
+.collage-item {
+  position: absolute;
 }
 
 @media (min-width: 768px) {
@@ -101,16 +133,10 @@ button {
 }
 
 .logo {
-  width: 100%;
-  height: 100px;
-  max-width: 220px;
+  width: 200px; 
+  height: 120px;
 }
 
-.collage-image {
-  width: 100%;
-  border-radius: 12px;
-  transition: opacity 0.3s;
-}
 
 .collage-image:hover {
   opacity: 0.85;
@@ -127,4 +153,84 @@ button {
   color: #777;
   border-radius: 8px;
   margin-top: 2rem;
+}
+
+
+.collage-image {
+  max-width: 350px;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+
+/* Random placement but tighter vertically, spread wider horizontally */
+.collage-item-0 {
+  top: 14%;
+  left: 2%;
+  transform: rotate(-4deg);
+}
+
+.collage-item-1 {
+  top: 45%;
+  left: 20%;
+  transform: rotate(2deg);
+}
+
+.collage-item-2 {
+  top: 5%;
+  left: 35%;
+  transform: rotate(-3deg);
+}
+
+.collage-item-3 {
+  top: 30%;
+  left: 50%;
+  transform: rotate(3deg);
+}
+
+.collage-item-4 {
+  top: 4%;
+  left: 65%;
+  transform: rotate(-2deg);
+}
+
+.collage-item-5 {
+  top: 35%;
+  left: 80%;
+  transform: rotate(5deg);
+}
+
+.collage-item-6 {
+  top: 20%;
+  left: 90%;
+  transform: rotate(-1deg);
+}
+
+.collage-item-7 {
+  top: 70%;
+  left: 65%;
+  transform: rotate(2deg);
+}
+
+.collage-item-8 {
+  top: 60%;
+  left: 4%;
+  transform: rotate(-4deg);
+
+}
+
+.collage-item-8 img {
+  min-width: 300px;
+  max-width: 500px;
+}
+.collage-item-9 {
+  top: -24px;
+  left: 28%;
+  transform: rotate(1deg);
+}
+
+.collage-item-9 img {
+  min-width: 300px;
+  max-width: 500px;
 }
