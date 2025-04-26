@@ -1,13 +1,13 @@
 // components/ShopPage.jsx
 import React from "react";
+import "./shop.css"; // Adjust the path as necessary
 
 export default function ShopPage() {
   return (
-    <section className="collage-text-block">
+    <section className="main">
       <h2>Shop</h2>
       <p>
-        Prints, zines, and limited edition items coming soon. Stay tuned!
-      </p>
+coming soon, i swear      </p>
     </section>
   );
 }

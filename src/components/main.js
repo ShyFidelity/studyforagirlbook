@@ -1,4 +1,6 @@
 import React from "react";
+import "./main.css"; // Adjust the path as necessary
+
 import CigGirl from "../assets/girl-w-cig.png";
 import LipsDrawing from "../assets/lips-drawing.png";
 import VelvetHand from "../assets/velvet-hand.png";
@@ -98,15 +100,8 @@ export default function CollagePage() {
       </nav>
       
   </div>
-      <main className="collage-main">
-        <section className="collage-intro">
-          <p>
-            is a film photographer based in Bournemouth & this is her website
-            portfolio.
-          </p>
-        </section>
-
-        <section className="collage-grid">
+      <main className="collage-main gradient">
+        <section className="collage-grid ">
   {images.map((img, i) => (
     <div key={i} className={`collage-item collage-item-${i}`}>
       <img src={img.src} alt={img.alt} className="collage-image" />

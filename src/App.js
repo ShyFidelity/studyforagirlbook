@@ -4,7 +4,7 @@ import CollagePage from "./components/main";
 import AboutPage from "./components/about.js";
 import ContactPage from "./components/contact.js";
 import ShopPage from "./components/shop.js";
-import Logo from "./assets/gb-logo.png";
+import Logo from "./assets/girl-book-logo.svg";
 
 const navItems = [
   { label: "Home", key: "home" },

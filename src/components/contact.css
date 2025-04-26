@@ -1,0 +1,5 @@
+.contact-main {
+  transform: scale(1.05);
+  z-index: 1;
+  padding: 4rem;
+}
