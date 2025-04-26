@@ -110,14 +110,17 @@ button {
   position: relative;
   width: 100%;
   height: 900px; /* tighter vertical space */
-  max-width: 1200px; /* a little wider on big screens */
+  max-width: 1400px; /* a little wider on big screens */
   margin: 0 auto;
+
+    position: relative;
+ z-index: 0;
+  
 }
 
 .collage-image {
   max-width: 450px; /* slightly smaller so more fit */
   height: auto;
-  border-radius: 12px;
   transition: transform 0.3s ease;
 }
 
@@ -157,7 +160,7 @@ button {
 
 
 .collage-image {
-  max-width: 350px;
+  max-width: 250px;
   height: auto;
   border-radius: 12px;
   transition: transform 0.3s ease;
@@ -167,40 +170,55 @@ button {
 /* Random placement but tighter vertically, spread wider horizontally */
 .collage-item-0 {
   top: 14%;
-  left: 2%;
-  transform: rotate(-4deg);
+  left: 10%;
+  transform: rotate(1deg);
+  z-index: 44; /* <-- move z-index here */
 }
 
+
 .collage-item-1 {
-  top: 45%;
-  left: 20%;
-  transform: rotate(2deg);
+  top: 42%;
+  left: 35%;
+  transform: rotate(-8deg);
+  z-index: 22;
 }
 
 .collage-item-2 {
-  top: 5%;
-  left: 35%;
+  top: 4%;
+  left: 34%;
   transform: rotate(-3deg);
+  z-index: 55;
+}
+
+.collage-item-2 img{
+  min-width: 300px;
+  max-width: 500px;
 }
 
 .collage-item-3 {
   top: 30%;
-  left: 50%;
+  left: 45%;
   transform: rotate(3deg);
+  z-index: 33;
 }
 
 .collage-item-4 {
-  top: 4%;
+  top: 11%;
   left: 65%;
   transform: rotate(-2deg);
 }
 
 .collage-item-5 {
   top: 35%;
-  left: 80%;
+  left: 75%;
   transform: rotate(5deg);
+  z-index: 44;
 }
 
+.collage-item-5 img{
+border-radius: 0;
+border: 12px solid #fff;
+}
 .collage-item-6 {
   top: 20%;
   left: 90%;
@@ -208,15 +226,18 @@ button {
 }
 
 .collage-item-7 {
-  top: 70%;
-  left: 65%;
+  top: 53%;
+  left: 72%;
   transform: rotate(2deg);
+  z-index: 11;
 }
 
 .collage-item-8 {
-  top: 60%;
+  top: 50%;
   left: 4%;
   transform: rotate(-4deg);
+  z-index: 555; /* <-- move z-index here */
+
 
 }
 
@@ -225,7 +246,7 @@ button {
   max-width: 500px;
 }
 .collage-item-9 {
-  top: -24px;
+  top: -14px;
   left: 28%;
   transform: rotate(1deg);
 }
@@ -233,4 +254,58 @@ button {
 .collage-item-9 img {
   min-width: 300px;
   max-width: 500px;
+}
+
+.collage-item-10{
+  top: 17%;
+  left: 1%;
+  transform: rotate(1deg);
+}
+
+.collage-item-10 img {
+  min-width: 200px;
+  max-width: 400px;
+  z-index: 1;
+}
+
+.collage-item-11{
+  top: 47%;
+  left: 49%;
+  transform: rotate(18deg);
+  z-index: 22;
+}
+
+
+.collage-item-12{
+  top: 29%;
+  left: 59%;
+  transform: rotate(5deg);
+}
+
+.collage-item-12 img {
+  min-width: 200px;
+  max-width:260px;
+  border-radius: 0;
+}
+
+.collage-item-13{
+  top: 24%;
+  left: 28%;
+  transform: rotate(-5deg);
+  z-index: 22;
+}
+
+.collage-item-13 img{
+  border-radius: 0;
+  border: #f0f0f0 12px solid;
+  }
+
+.collage-item-14{
+  top: 2%;
+  left: 9%;
+  transform: rotate(5deg);
+}
+
+.collage-item-13 img{
+border-radius: 0;
 }

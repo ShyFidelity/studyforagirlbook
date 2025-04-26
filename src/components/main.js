@@ -12,6 +12,13 @@ import CigLady from "../assets/cig-lady.gif"
 import Hearts from "../assets/hearts.svg";
 import JagWalk from "../assets/jag-walk.gif"
 import Search from "../assets/search-narrow.gif"
+import PinkBook from "../assets/sophie-calle-take-care-of-yourself.png";
+import FlowersInHand from "../assets/flowers-in-hand.jpg"
+import Grapes from "../assets/grapes.jpg"
+import GirlReading from "../assets/girl-reading.jpg";
+import Cunt2 from "../assets/cunt-sparkle.png";
+import Gurlz from "../assets/gurlz.jpg";
+import Bambi from "../assets/bambi.gif";
 
 const navItems = ["Home", "About", "Portfolio", "Journal", "Contact"];
 
@@ -22,7 +29,7 @@ const images = [
     alt: "Cooking scene",
   },
   {
-    src: LipsDrawing,
+    src: Grapes,
     alt: "lipsdrawing",
   },
   {
@@ -30,7 +37,7 @@ const images = [
     alt: "Train window view",
   },
   {
-    src: CigLady,
+    src: PinkBook,
     alt: "Bar scene",
   },
   {
@@ -38,7 +45,7 @@ const images = [
     alt: "Train window view",
   },
   {
-    src: Trashy,
+    src: Bambi,
     alt: "Train window view",
   },
     {
@@ -57,6 +64,23 @@ const images = [
     src: Search,
     alt: "lipsdrawing",
   }, 
+  {
+    src: FlowersInHand,
+    alt: "lipsdrawing",
+  }, 
+  {
+    src: LipsDrawing,
+    alt: "lipsdrawing",
+  }, 
+  {
+    src: Cunt2,
+    alt: "lipsdrawing",
+  }, 
+  {
+    src: GirlReading,
+    alt: "lipsdrawing",
+  }, 
+
 
 ];
 
