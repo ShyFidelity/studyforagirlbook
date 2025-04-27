@@ -112,8 +112,7 @@ export default function CollagePage() {
 
         <section className="collage-text-block">
           <p>
-            Scribbles, textures, and spontaneity form the spirit of the work.
-            Each frame is a moment caught in quiet observation.
+          It’s fun, it’s flirty, it’s deeply thoughtful but never takes itself too seriously. 
           </p>
         </section>
 
