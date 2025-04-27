@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/studyforagirlbook/static/css/main.4f6e57b0.css",
-    "main.js": "/studyforagirlbook/static/js/main.66c1913f.js",
+    "main.js": "/studyforagirlbook/static/js/main.277635dc.js",
     "static/js/453.449eb6ae.chunk.js": "/studyforagirlbook/static/js/453.449eb6ae.chunk.js",
     "static/media/jag-walk.gif": "/studyforagirlbook/static/media/jag-walk.f45a69c34e805aff9e89.gif",
     "static/media/cig-lady.gif": "/studyforagirlbook/static/media/cig-lady.4025b8588561079a29e9.gif",
@@ -26,11 +26,11 @@
     "static/media/hearts.svg": "/studyforagirlbook/static/media/hearts.13107355bf989e4ee7d655859442c0bb.svg",
     "index.html": "/studyforagirlbook/index.html",
     "main.4f6e57b0.css.map": "/studyforagirlbook/static/css/main.4f6e57b0.css.map",
-    "main.66c1913f.js.map": "/studyforagirlbook/static/js/main.66c1913f.js.map",
+    "main.277635dc.js.map": "/studyforagirlbook/static/js/main.277635dc.js.map",
     "453.449eb6ae.chunk.js.map": "/studyforagirlbook/static/js/453.449eb6ae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f6e57b0.css",
-    "static/js/main.66c1913f.js"
+    "static/js/main.277635dc.js"
   ]
 }
