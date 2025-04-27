@@ -39,7 +39,9 @@ export default function App() {
   return (
     <div className="collage-wrapper">
       <nav className="collage-nav">
-      <a href="https://studyforagirlbook.substack.com/" className="type-link">read our substack</a>
+      <a href="https://studyforagirlbook.substack.com/" className="type-link" target="_blank" rel="noopener noreferrer">
+  read our substack 🎀
+</a>
 
  <img src={Logo} alt="Logo" className="logo" />
         
