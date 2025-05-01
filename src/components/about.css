@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 .about {
     display: flex;
     flex-direction: column;
@@ -5,3 +10,209 @@
     padding: 90px;
 }
 
+.about-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.about-image img {
+    width: 100%;
+    height: auto;
+}
+.about-text {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about-text h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+
+.profile-card {
+    max-width: 320px;
+    background: #fffaf6;
+    border: 1px dashed #ccc;
+    border-radius: 16px;
+    padding: 1.5rem;
+    position: relative;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    font-family: 'Georgia', serif;
+  }
+  
+  .photo-wrapper {
+    text-align: center;
+    margin-top: -40px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .text-content {
+    text-align: center;
+    padding-top: 1rem;
+  }
+  
+  .text-content h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .text-content .title {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.25rem 0;
+    font-style: italic;
+  }
+  
+  .text-content .bio {
+    font-size: 0.9rem;
+    color: #444;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+  }
+
+  .profile-section {
+    max-width: 500px;
+    margin: 2rem auto;
+    font-family: 'Georgia', serif;
+    text-align: center;
+  }
+  
+  .taped-photo-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+  
+  .taped-photo {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    border: 5px solid white;
+  }
+  
+  .tape {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    background-color: #d6c9a5; /* masking tape beige */
+    opacity: 0.65;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    transform: rotate(-3deg);
+    background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.15) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0.15) 75%,
+      transparent 75%,
+      transparent
+    );
+    background-size: 10px 10px;
+  }
+  
+  .tape-top-left {
+    top: -25px;
+    left: -30px;
+    transform: rotate(-7deg);
+  }
+  
+  .tape-bottom-right {
+    bottom: -25px;
+    right: -30px;
+    transform: rotate(10deg);
+  }
+  
+  .profile-text h3 {
+    font-size: 1.5rem;
+    margin: 0.25rem 0;
+  }
+  
+  .profile-text .title {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-text .bio {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+    padding: 0 1rem;
+  }
+  
+
+
+  /* Hide mobile version by default */
+.mobile-profile-card {
+    display: none;
+  }
+  
+  /* Show mobile version, hide desktop one on small screens */
+  @media (max-width: 640px) {
+    .desktop-profile {
+      display: none;
+    }
+  
+    .mobile-profile-card {
+      display: block;
+      max-width: 90%;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #fffaf6;
+      border: 1px dashed #ccc;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      font-family: 'Georgia', serif;
+    }
+  
+    .mobile-profile-card .photo-wrapper {
+      margin-bottom: 1rem;
+    }
+  
+    .mobile-profile-card .profile-photo {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 3px solid white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+  
+    .mobile-profile-card .title {
+      color: #666;
+      font-size: 0.9rem;
+      margin: 0.25rem 0;
+    }
+  
+    .mobile-profile-card .bio {
+      font-size: 0.85rem;
+      color: #444;
+      line-height: 1.4;
+    }
+  }
+  
